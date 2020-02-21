@@ -1,0 +1,10 @@
+ <json-schema-form #form
+    [schema]="schema"
+    [layout]="layout"
+    [options]='options'
+    [framework]="'bootstrap-4'"
+    [debug]="true"
+    (formSchema)="showFormSchemaFn($event)"
+    (formLayout)="showFormLayoutFn($event)"
+    (onSubmit)="onSubmit()">
+    </json-schema-form>
